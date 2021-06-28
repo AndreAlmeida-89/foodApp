@@ -13,6 +13,9 @@
 		65ACCBB3268A43CC00859EB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65ACCBB1268A43CC00859EB4 /* Main.storyboard */; };
 		65ACCBB5268A43CD00859EB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65ACCBB4268A43CD00859EB4 /* Assets.xcassets */; };
 		65ACCBB8268A43CD00859EB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65ACCBB6268A43CD00859EB4 /* LaunchScreen.storyboard */; };
+		65ACCBC1268A5DB000859EB4 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ACCBC0268A5DB000859EB4 /* Meal.swift */; };
+		65ACCBC3268A5E5C00859EB4 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ACCBC2268A5E5C00859EB4 /* Item.swift */; };
+		65ACCBCC268A7D4400859EB4 /* TableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ACCBCB268A7D4400859EB4 /* TableViewVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,10 @@
 		65ACCBB4268A43CD00859EB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65ACCBB7268A43CD00859EB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65ACCBB9268A43CE00859EB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65ACCBBF268A4F6E00859EB4 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		65ACCBC0268A5DB000859EB4 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		65ACCBC2268A5E5C00859EB4 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		65ACCBCB268A7D4400859EB4 /* TableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +63,43 @@
 		65ACCBAA268A43CC00859EB4 /* eggplant-brownie */ = {
 			isa = PBXGroup;
 			children = (
+				65ACCBC4268A5FC400859EB4 /* Models */,
+				65ACCBC5268A5FE100859EB4 /* Views */,
+				65ACCBC6268A5FF600859EB4 /* Controllers */,
 				65ACCBAB268A43CC00859EB4 /* AppDelegate.swift */,
 				65ACCBAD268A43CC00859EB4 /* SceneDelegate.swift */,
-				65ACCBAF268A43CC00859EB4 /* ViewController.swift */,
-				65ACCBB1268A43CC00859EB4 /* Main.storyboard */,
 				65ACCBB4268A43CD00859EB4 /* Assets.xcassets */,
-				65ACCBB6268A43CD00859EB4 /* LaunchScreen.storyboard */,
 				65ACCBB9268A43CE00859EB4 /* Info.plist */,
+				65ACCBBF268A4F6E00859EB4 /* MyPlayground.playground */,
 			);
 			path = "eggplant-brownie";
+			sourceTree = "<group>";
+		};
+		65ACCBC4268A5FC400859EB4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				65ACCBC0268A5DB000859EB4 /* Meal.swift */,
+				65ACCBC2268A5E5C00859EB4 /* Item.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		65ACCBC5268A5FE100859EB4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				65ACCBB1268A43CC00859EB4 /* Main.storyboard */,
+				65ACCBB6268A43CD00859EB4 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		65ACCBC6268A5FF600859EB4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				65ACCBAF268A43CC00859EB4 /* ViewController.swift */,
+				65ACCBCB268A7D4400859EB4 /* TableViewVC.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +172,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65ACCBCC268A7D4400859EB4 /* TableViewVC.swift in Sources */,
+				65ACCBC3268A5E5C00859EB4 /* Item.swift in Sources */,
+				65ACCBC1268A5DB000859EB4 /* Meal.swift in Sources */,
 				65ACCBB0268A43CC00859EB4 /* ViewController.swift in Sources */,
 				65ACCBAC268A43CC00859EB4 /* AppDelegate.swift in Sources */,
 				65ACCBAE268A43CC00859EB4 /* SceneDelegate.swift in Sources */,
