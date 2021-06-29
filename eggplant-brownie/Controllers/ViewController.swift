@@ -7,9 +7,14 @@
 
 import UIKit
 
+protocol ViewControllerDelegate {
+    func addMeal(_ meal: Meal)
+}
+
+
 class ViewController: UIViewController {
     
-    var tableViewController: TableViewVC?
+    var delegate: ViewControllerDelegate?
     
     @IBOutlet var foodTextField: UITextField?
     @IBOutlet var happinessTextField: UITextField?
@@ -22,7 +27,7 @@ class ViewController: UIViewController {
             if let happiness = Int(happiness) {
                 let meal = Meal(name: food, hapiness: happiness)
                 print("Meal: \(meal.name) | Happiness: \(meal.hapiness)")
-                tableViewController?.addMeal(meal)
+                delegate? .addMeal(meal)
                 navigationController?.popViewController(animated: true)
             } else {
                 print("error")
