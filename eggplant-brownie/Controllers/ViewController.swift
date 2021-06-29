@@ -12,8 +12,19 @@ protocol AddMealDelegate {
 }
 
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, AddItemVCDelegate {
    
+    // MARK: - View life cicle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let addItemButton = UIBarButtonItem(title: "Add Item", style: .plain, target: self, action: #selector(goToaddItem))
+        navigationItem.rightBarButtonItem = addItemButton
+    }
+    
+    @objc func goToaddItem(){
+        let addItemVC = AddItemVC(delegate: self)
+        navigationController?.pushViewController(addItemVC, animated: true)
+    }
     
     // MARK: - Properties
     var delegate: AddMealDelegate?
@@ -27,6 +38,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     // MARK: - IBOutlets
     @IBOutlet var foodTextField: UITextField?
     @IBOutlet var happinessTextField: UITextField?
+    @IBOutlet weak var itensTableView: UITableView!
     
     //MARK: - UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -55,6 +67,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
     }
     
+   
+    
+    func addItem(_ item: Item){
+        itens.append(item)
+        itensTableView.reloadData()
+    }
+    
     
     // MARK: - IBActions
     @IBAction func add(){
@@ -74,10 +93,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
+  
 
 }
 

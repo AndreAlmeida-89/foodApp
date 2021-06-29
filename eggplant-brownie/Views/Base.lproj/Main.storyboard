@@ -75,6 +75,7 @@
                     <connections>
                         <outlet property="foodTextField" destination="DGF-gh-TDJ" id="Q3t-EV-eIP"/>
                         <outlet property="happinessTextField" destination="QkF-ea-FX4" id="hqe-lF-sng"/>
+                        <outlet property="itensTableView" destination="wJ7-Uq-xVy" id="JCF-sb-6bA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -97,10 +98,10 @@
             </objects>
             <point key="canvasLocation" x="-1652" y="125"/>
         </scene>
-        <!--Meals Table ViewVC-->
+        <!--Meals TableVC-->
         <scene sceneID="iXN-0n-Y0k">
             <objects>
-                <tableViewController id="D4i-TO-3aA" customClass="MealsTableViewVC" customModule="eggplant_brownie" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="D4i-TO-3aA" customClass="MealsTableVC" customModule="eggplant_brownie" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="kKj-Ol-rOw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
