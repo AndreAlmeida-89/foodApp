@@ -12,11 +12,12 @@ class Meal: NSObject {
     
     let name: String
     let  hapiness: Int
-    var  itens: Array<Item> = []
+    var  itens: Array<Item>
     
-    init(name: String, hapiness: Int) {
+    init(name: String, hapiness: Int, itens: [Item] = []) {
         self.name = name
         self.hapiness = hapiness
+        self.itens = itens
     }
     
     func addItem(_ item: Item) {

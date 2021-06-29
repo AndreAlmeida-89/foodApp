@@ -15,7 +15,7 @@
 		65ACCBB8268A43CD00859EB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65ACCBB6268A43CD00859EB4 /* LaunchScreen.storyboard */; };
 		65ACCBC1268A5DB000859EB4 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ACCBC0268A5DB000859EB4 /* Meal.swift */; };
 		65ACCBC3268A5E5C00859EB4 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ACCBC2268A5E5C00859EB4 /* Item.swift */; };
-		65ACCBCC268A7D4400859EB4 /* TableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ACCBCB268A7D4400859EB4 /* TableViewVC.swift */; };
+		65ACCBCC268A7D4400859EB4 /* MealsTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ACCBCB268A7D4400859EB4 /* MealsTableViewVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +30,7 @@
 		65ACCBBF268A4F6E00859EB4 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		65ACCBC0268A5DB000859EB4 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		65ACCBC2268A5E5C00859EB4 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		65ACCBCB268A7D4400859EB4 /* TableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewVC.swift; sourceTree = "<group>"; };
+		65ACCBCB268A7D4400859EB4 /* MealsTableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsTableViewVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +70,7 @@
 				65ACCBAD268A43CC00859EB4 /* SceneDelegate.swift */,
 				65ACCBB4268A43CD00859EB4 /* Assets.xcassets */,
 				65ACCBB9268A43CE00859EB4 /* Info.plist */,
+				65ACCBB6268A43CD00859EB4 /* LaunchScreen.storyboard */,
 				65ACCBBF268A4F6E00859EB4 /* MyPlayground.playground */,
 			);
 			path = "eggplant-brownie";
@@ -88,7 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				65ACCBB1268A43CC00859EB4 /* Main.storyboard */,
-				65ACCBB6268A43CD00859EB4 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -97,7 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				65ACCBAF268A43CC00859EB4 /* ViewController.swift */,
-				65ACCBCB268A7D4400859EB4 /* TableViewVC.swift */,
+				65ACCBCB268A7D4400859EB4 /* MealsTableViewVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -172,7 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65ACCBCC268A7D4400859EB4 /* TableViewVC.swift in Sources */,
+				65ACCBCC268A7D4400859EB4 /* MealsTableViewVC.swift in Sources */,
 				65ACCBC3268A5E5C00859EB4 /* Item.swift in Sources */,
 				65ACCBC1268A5DB000859EB4 /* Meal.swift in Sources */,
 				65ACCBB0268A43CC00859EB4 /* ViewController.swift in Sources */,
@@ -327,6 +327,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A9976965C3;
 				INFOPLIST_FILE = "eggplant-brownie/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -346,6 +347,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A9976965C3;
 				INFOPLIST_FILE = "eggplant-brownie/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
